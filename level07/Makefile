@@ -1,8 +1,8 @@
 all:
 	javac Program.java
-	jar -cf input.jar Program
-	cat input.jpg input.jar > cookiejar.jpg
+	jar cmvf META-INF/MANIFEST.MF input.jar Program.class
+	cat input.jpg input.jar > output.jpg
 clean:
-	rm cookiejar.jpg
+	rm output.jpg
 	rm input.jar
 	rm Program.class
