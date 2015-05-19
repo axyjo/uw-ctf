@@ -1,6 +1,6 @@
 all:
 	javac Program.java
-	jar -cf input.jar Program
+	jar cmvf META-INF/MANIFEST.MF jar.jar Program.class
 clean:
-	rm input.jar
+	rm jar.jar
 	rm Program.class
